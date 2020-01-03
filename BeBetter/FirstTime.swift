@@ -14,6 +14,7 @@ class FirstTime: UIViewController {
     @IBOutlet weak var go: UILabel!
     @IBOutlet weak var hi: UILabel!
     override func viewDidLoad()
+        //this is needed to allow the user to see this on the first time opening the app
     {
         super.viewDidLoad()
 

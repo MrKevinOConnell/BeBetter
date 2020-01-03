@@ -34,9 +34,11 @@ class Finally: UIViewController
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //The font size of the titles are adjusted to fit the screen
        button1Out.titleLabel!.adjustsFontSizeToFitWidth = true;
        button2Out.titleLabel!.adjustsFontSizeToFitWidth = true;
        button3Out.titleLabel!.adjustsFontSizeToFitWidth = true;
+        //just an intro message
        intro.text = "\(name), here are some activity's that will help a \(age) year old like you."
        setActivitys();
     // Do any additional setup after loading the view.
@@ -49,13 +51,14 @@ class Finally: UIViewController
         //plan to add more
         var basicActivitys = ["Take a shower", "brush your teeth", "eat some food","Workout", "Meditate", "Find a therapist"];
         let basicActivity = basicActivitys.randomElement();
-             
+             //checks to see if activity has been placed
                func removeActivity(check:String?)
                {
                    var b = 0;
                    
                for basicActive in basicActivitys
                    {
+                    //checks to see what value in the array has been used and removes it
                    if(basicActive == check)
                        {
                        print(b);
@@ -63,9 +66,11 @@ class Finally: UIViewController
                        print("done!");
                        print(basicActivitys);
                        }
+                    
                    b+=1;
                    }
                }
+        //runs removeActivity for all three activities and sets the button titles to them.
                removeActivity(check: basicActivity);
                let secondActivity = basicActivitys.randomElement();
                removeActivity(check: secondActivity);
@@ -76,7 +81,7 @@ class Finally: UIViewController
                button3Out.setTitle(thirdActivity, for: .normal);
     }
 /*
-     //if i ever wanted to add an age function it would be here
+    //if i ever wanted to add an age function it would be here
 func ageRange()
 {
    
