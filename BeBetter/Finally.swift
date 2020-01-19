@@ -113,19 +113,20 @@ func ageRange()
     //each button segues and sends title to the camera viewcontroller
     @IBAction func button1(_ sender: Any)
     {
-        
+       self.performSegue(withIdentifier: "cam", sender: self)
     }
     
     @IBAction func button2(_ sender: Any)
     {
-        
+        self.performSegue(withIdentifier: "cam", sender: self)
     }
     @IBAction func button3(_ sender: Any)
     {
-        
+      self.performSegue(withIdentifier: "cam", sender: self)
     }
     
-  
+    
+
          
 }
 

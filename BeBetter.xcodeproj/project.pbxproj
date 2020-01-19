@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6C556A23D42D720051BF74 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6C556923D42D720051BF74 /* Camera.swift */; };
 		6FABFF4F23AC12DB00BDC5FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABFF4E23AC12DB00BDC5FD /* AppDelegate.swift */; };
 		6FABFF5123AC12DB00BDC5FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABFF5023AC12DB00BDC5FD /* SceneDelegate.swift */; };
 		6FABFF5323AC12DB00BDC5FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABFF5223AC12DB00BDC5FD /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		6FABFF7423AC12DB00BDC5FD /* BeBetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABFF7323AC12DB00BDC5FD /* BeBetterUITests.swift */; };
 		6FABFF8223AC369C00BDC5FD /* FirstTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FABFF8123AC369C00BDC5FD /* FirstTime.swift */; };
 		6FD87AA123AD616C0047ABAE /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD87AA023AD616C0047ABAE /* Setup.swift */; };
-		6FD87AA523ADFE740047ABAE /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD87AA423ADFE740047ABAE /* Tasks.swift */; };
 		6FD87AA923AEBE150047ABAE /* Finally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD87AA823AEBE150047ABAE /* Finally.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F6C556923D42D720051BF74 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		6FABFF4B23AC12DB00BDC5FD /* BeBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FABFF4E23AC12DB00BDC5FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FABFF5023AC12DB00BDC5FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		6FABFF7523AC12DB00BDC5FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FABFF8123AC369C00BDC5FD /* FirstTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTime.swift; sourceTree = "<group>"; };
 		6FD87AA023AD616C0047ABAE /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
-		6FD87AA423ADFE740047ABAE /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
 		6FD87AA823AEBE150047ABAE /* Finally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finally.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,6 @@
 		6FABFF4223AC12DB00BDC5FD = {
 			isa = PBXGroup;
 			children = (
-				6FD87AA423ADFE740047ABAE /* Tasks.swift */,
 				6FABFF4D23AC12DB00BDC5FD /* BeBetter */,
 				6FABFF6723AC12DB00BDC5FD /* BeBetterTests */,
 				6FABFF7223AC12DB00BDC5FD /* BeBetterUITests */,
@@ -112,11 +111,12 @@
 			children = (
 				6FABFF4E23AC12DB00BDC5FD /* AppDelegate.swift */,
 				6FABFF5023AC12DB00BDC5FD /* SceneDelegate.swift */,
-				6FABFF5223AC12DB00BDC5FD /* ViewController.swift */,
 				6FABFF5423AC12DB00BDC5FD /* Main.storyboard */,
+				6FABFF5223AC12DB00BDC5FD /* ViewController.swift */,
+				6FABFF8123AC369C00BDC5FD /* FirstTime.swift */,
 				6FD87AA823AEBE150047ABAE /* Finally.swift */,
 				6FD87AA023AD616C0047ABAE /* Setup.swift */,
-				6FABFF8123AC369C00BDC5FD /* FirstTime.swift */,
+				6F6C556923D42D720051BF74 /* Camera.swift */,
 				6FABFF5A23AC12DB00BDC5FD /* Assets.xcassets */,
 				6FABFF5C23AC12DB00BDC5FD /* LaunchScreen.storyboard */,
 				6FABFF5F23AC12DB00BDC5FD /* Info.plist */,
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD87AA523ADFE740047ABAE /* Tasks.swift in Sources */,
+				6F6C556A23D42D720051BF74 /* Camera.swift in Sources */,
 				6FABFF5323AC12DB00BDC5FD /* ViewController.swift in Sources */,
 				6FD87AA123AD616C0047ABAE /* Setup.swift in Sources */,
 				6FABFF4F23AC12DB00BDC5FD /* AppDelegate.swift in Sources */,
@@ -461,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = beBetter.BeBetter;
+				PRODUCT_BUNDLE_IDENTIFIER = beBetter.lol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,7 +479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = beBetter.BeBetter;
+				PRODUCT_BUNDLE_IDENTIFIER = beBetter.lol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

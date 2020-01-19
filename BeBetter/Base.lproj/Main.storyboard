@@ -228,11 +228,27 @@
                         <outlet property="button2Out" destination="gTw-5B-nkb" id="W1H-uu-AF2"/>
                         <outlet property="button3Out" destination="yMQ-cJ-tNm" id="lqz-sl-Vi8"/>
                         <outlet property="intro" destination="eyU-Ao-hUO" id="u26-qL-NkB"/>
+                        <segue destination="b87-fL-EgQ" kind="showDetail" identifier="cam" id="VHk-Po-uSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGA-tm-DSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2802.898550724638" y="135.9375"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="ZBl-kJ-v1i">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="b87-fL-EgQ" customClass="Camera" customModule="BeBetter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nnn-sj-cHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RQD-e3-R2G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kp-6C-Vq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3512" y="136"/>
         </scene>
     </scenes>
 </document>
